@@ -169,9 +169,7 @@ h2 {
 }
 
 #slider{
-  /* max-width: 830px; No need for this  */
   margin: 0 auto;
-  /* width: 830px; No need for this  */
   width: 100%;
   height: 450px;
   display:block;
@@ -180,15 +178,13 @@ h2 {
 #slider a{
   position:absolute;
   margin: 0 auto;
-  max-width:810px; /* the width minus the padding */
+  max-width:810px; 
   width:100%;
 }
 
 #slider a img{
   padding:10px;
-  /* border:1px solid #ccc; No need for this */
   background:#fff;
-  /* width:800px; No need for this  */
   width:100%;
   height:450px;
 
@@ -196,7 +192,6 @@ h2 {
 
 #slider a:nth-of-type(1){
   animation-name:fader;
-  /* animation-delay:4s; dont think you really need this */
   animation-duration:4s;
   z-index:10;
 }
