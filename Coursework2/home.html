@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="CSS\styles.css">
+  </head>
+  <body>
+
+    <!--
+      Inline JS should always be just before the closing body tag: </body>
+      If the JS code is here, it will execute once and not everytime the animation has changed because the DOM changes below it.
+    -->
+
+    <div class="container1">
+        <div class="container1-sub">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="recc.html">Graphic Tablet Recommendations</a></li>
+            <li><a href="programme.html">Programme Recommendations</a></li>
+            <li><a href="tips.html">Tips and Tricks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <h1>HOME</h1>
+        </div>
+
+
+      <div id="slider">
+          <a href="Image\encanto landscape.png"><img src ="Image\encanto landscape.png"></a>
+          <a href="Image\coco.png"><img src ="Image\coco.png"></a>
+          <a href="Image\monstersuni.png"><img src ="Image\monstersuni.png"></a>
+          <a href="Image\encanto.png"><img src ="Image\encanto.png"></a>
+          <a href="Image\up.png"><img src ="Image\up.png"></a>
+      </div>
+
+      <br><br>
+
+      <div class="aboutme">
+        <img class="drawingontablet" src="Image\using dt.png" alt="drawing">
+
+
+        <p class="aboutme-text">Hi!
+          I'm Keely, here to teach you all you need to know about digital drawing!
+          This page is for both beginners and professionals alike! Just here
+          to spread the joy of digital art with others.
+
+          If you have never considered trying digital art, maybe this website
+          will convince you to give it a go! :D
+        </p>
+      </div>
+
+        <!-- Don't do this. Give the element above a margin-bottom instead -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+      <div class="art-video">
+          <h1>ART VIDEO OF THE DAY</h1>
+
+          <video controls="" width="50%" height="50%" poster="Image\artistmistakes.jpg">
+          <source src="Video\art 'mistakes' that are good, actually.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <footer>
+          <h2 class="footer-text">CONNECT WITH US</h2>
+        <div class="footer-socials">
+          <a href="https://en-gb.facebook.com/">
+            <img src="Image\socialmediaicons\5279111_network_fb_social media_facebook_facebook logo_icon.png" alt="socials">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="Image\socialmediaicons\5279112_camera_instagram_social media_instagram logo_icon.png" alt="socials">
+          </a>
+          <a href="https://gb.linkedin.com/">
+            <img src="Image\socialmediaicons\5279114_linkedin_network_social network_linkedin logo_icon.png" alt="socials">
+          </a>
+          <a href="https://twitter.com/?lang=en-gb">
+            <img src="Image\socialmediaicons\5279123_tweet_twitter_twitter logo_icon (1).png" alt="socials">
+          </a>
+        </div>
+      </footer>
+
+    </div>
+
+    <script type="text/javascript">
+
+      var fadeComplete = function(e) {stage.appendChild(arr[0]);};
+
+      var stage = document.getElementById("slider");
+      var arr = stage.getElementsByTagName("a");
+
+      for(var i=0; i <arr.length; i++) {
+
+        arr[i].addEventListener("animationend", fadeComplete);
+
+      }
+    </script>
+  </body>
+</html>
